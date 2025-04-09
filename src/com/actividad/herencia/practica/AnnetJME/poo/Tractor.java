@@ -1,10 +1,10 @@
 package com.actividad.herencia.practica.AnnetJME.poo;
 
 public class Tractor extends Terrestre{
-    private int tareasRealizar;
+    private String tareasRealizar;
     private int capacidadCarga;
-    public Tractor(int tareasRealizar, int capacidadCarga, String marca, int modeloAnio, int capacidadPasajeros, int velocidadIn, int velocidadFin, String combustible, boolean estadoVehi, int tiempo, int tamanio) {
-        super(marca, modeloAnio, capacidadPasajeros, velocidadIn, velocidadFin, combustible, estadoVehi, tiempo, tamanio);
+    public Tractor(String tareasRealizar, int capacidadCarga, int numRuedas, String transmision, String tipoVehiculo, String marca, int modeloAnio, int capacidadPasajeros, int velocidadIn, int velocidadFin, String combustible, boolean estadoVehi, int tiempo, int tamanio) {
+        super(numRuedas, transmision, tipoVehiculo, marca, modeloAnio, capacidadPasajeros, velocidadIn, velocidadFin, combustible, estadoVehi, tiempo, tamanio);
         this.tareasRealizar = tareasRealizar;
         this.capacidadCarga = capacidadCarga;
     }
