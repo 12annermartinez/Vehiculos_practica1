@@ -30,17 +30,18 @@ public class Vehiculo {// ESTA SERIA LA CLASE PADRE.
         System.out.println("el tamaño del vahícuolo es: "+ tamanio);
     }
     public void arrancar(){
-        if estadoVehi==0{
+        if (estadoVehi==0){
             this.estadoVehi=estadoVehi++;
         }
     }
     public void detener(){
-        if estadoVehi==1{
+        if (estadoVehi==1){
             this.estadoVehi=estadoVehi--;
         }
     }
     public int acelerar(int aceleracion){
         aceleracion=(velocidadFin-velocidadIn)/tiempo;
+        return aceleracion;
     }
 
 }
