@@ -1,4 +1,5 @@
 package com.actividad.herencia.practica.AnnetJME.poo;
 import java.util.*;
-public class Acuatico {
+public class Acuatico extends Vehiculo{
+
 }
