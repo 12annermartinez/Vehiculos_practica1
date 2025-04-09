@@ -11,8 +11,12 @@ public class Acuatico extends Vehiculo{
         this.numMotores=numMotores;
         this.tripulacion=tripulacion;
         this.numCubiertas=numCubiertas;
-
-
+    }
+    public void mostrarAcuatico(){
+        System.out.println("El tipo de embarcacion es: "+ tipoEmbarcacion);
+        System.out.println("La cantidad de motores es: "+ numMotores);
+        System.out.println("La tripulacion máxima es: "+tripulacion);
+        System.out.println("El número de cubiertas es de: "+ numCubiertas);
     }
 
 }
