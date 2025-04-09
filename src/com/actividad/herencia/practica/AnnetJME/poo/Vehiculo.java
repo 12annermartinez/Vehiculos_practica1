@@ -17,11 +17,11 @@ public class Vehiculo {// ESTA SERIA LA CLASE PADRE.
         this.velocidadIn =velocidadIn;
         this.velocidadFin=velocidadFin;
         this.combustible=combustible;
-        this.estadoVehi=0;
+        this.estadoVehi=false;
         this.tiempo=tiempo;
         this.tamanio=tamanio;
     }
-    public void mostrarVehiculo(){
+    public void mostrar(){
         System.out.println("La marca del vehículo es: " + marca);
         System.out.println("El año modelo del vehículo es: " + modeloAnio);
         System.out.println("La máxima capacidad de pasajeros del vehículo es: " + capacidadPasajeros);
@@ -30,13 +30,13 @@ public class Vehiculo {// ESTA SERIA LA CLASE PADRE.
         System.out.println("el tamaño del vahícuolo es: "+ tamanio);
     }
     public void arrancar(){
-        if (estadoVehi==0){
-            this.estadoVehi=estadoVehi++;
+        if (estadoVehi==false){
+            this.estadoVehi=true;
         }
     }
     public void detener(){
-        if (estadoVehi==1){
-            this.estadoVehi=estadoVehi--;
+        if (estadoVehi==true){
+            this.estadoVehi=false;
         }
     }
     public int acelerar(int aceleracion){

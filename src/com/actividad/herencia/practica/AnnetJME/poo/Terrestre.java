@@ -10,7 +10,8 @@ public class Terrestre extends Vehiculo{
         this.transmision=transmision;
         this.tipoVehiculo=tipoVehiculo;
     }
-    public void mostrarTerrestre(){
+    public void mostrar(){
+        super.mostrar();
         System.out.println("El numero de ruedas de este vehiculo es: "+numRuedas);
         System.out.println("El tipo de transmision de carro es: " + transmision);
         System.out.println("El tipo de vehiculo es: "+ tipoVehiculo);
